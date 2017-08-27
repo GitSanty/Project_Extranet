@@ -6,10 +6,11 @@ session_start();
 date_default_timezone_set('Europe/London');
 
 //database credentials
-define('DBHOST','localhost');
-define('DBUSER','root');
-define('DBPASS','user');
-define('DBNAME','chat_V1');
+define('DBHOST','ec2-54-247-119-245.eu-west-1.compute.amazonaws.com
+');
+define('DBUSER','mcsrmexgtpzjgj');
+define('DBPASS','69504d4d26ef8e273de69ffb401ff3a6048c3528ea6c2deab1629111f5c500d5');
+define('DBNAME','d306sj6ieqet92');
 
 //application address
 define('DIR','http://domain.com/');
