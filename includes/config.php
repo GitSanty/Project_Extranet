@@ -45,4 +45,20 @@ try {
 include('classes/user.php');
 include('classes/phpmailer/mail.php');
 $user = new User($db);
+
+?>
+
+<?php
+$query = "SELECT * "
+    . "FROM members ";
+$result = $db->query($query);
+while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+    echo "<tr>";
+    echo "<td>" . $row["employee_id"] . "</td>";
+    echo "<td>" . htmlspecialchars($row["username"]) . "</td>";
+    echo "<td>" . htmlspecialchars($row["password"]) . "</td>";
+     
+    echo "</tr>";
+}
+$result->closeCursor();
 ?>
