@@ -6,8 +6,7 @@ session_start();
 date_default_timezone_set('Europe/London');
 
 //database credentials
-define('DBHOST','ec2-54-247-119-245.eu-west-1.compute.amazonaws.com
-');
+define('DBHOST','ec2-54-247-119-245.eu-west-1.compute.amazonaws.com');
 define('DBUSER','mcsrmexgtpzjgj');
 define('DBPASS','69504d4d26ef8e273de69ffb401ff3a6048c3528ea6c2deab1629111f5c500d5');
 define('DBNAME','d306sj6ieqet92');
