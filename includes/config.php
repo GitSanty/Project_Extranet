@@ -24,6 +24,7 @@ try {
 
 } catch(PDOException $e) {
 	//show error
+	echo "here";
     echo '<p class="bg-danger">'.$e->getMessage().'</p>';
     exit;
 }
